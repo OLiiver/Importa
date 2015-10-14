@@ -1,0 +1,253 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #404044;
+}
+div{
+	padding: .6em 0;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+section{
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	display: table;
+}
+div::before, section::before, article::before, figure::before{
+	content:'';
+}
+article{
+	text-align: justify;
+}
+h1{
+	margin-bottom: 0;
+	text-align: center;
+	color: #40362A;
+}
+hr{
+	left: 40em;
+}
+
+.pad-top{
+	padding-top: 3em;
+}
+.marto{
+	margin: 5em 0;
+}
+.re1{
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	animation-delay: .5s;
+}
+.re2{
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+/*  ---- menu de navegación ------- */
+.nav{
+	position: fixed;
+	z-index: 1;
+	background-color: #19262F;
+	left: 0;
+	top: 0;
+	right: 0;
+	text-align: center;
+}
+	.nav-cont{
+		margin: .5em;
+		padding: 0;
+	}
+		.nav-li{
+			list-style: none;
+			display: inline-block;
+			margin: 0  .8em;
+			padding: 0 .8em;
+			font-size: 1.3em;
+			border-bottom: 2px solid #B73137;
+		}
+		.nav-li:hover{
+			border-bottom: 2px solid #D61817;
+		}
+			.nav-a{
+				display: block;
+				text-decoration: none;
+				color: #B73137;
+				padding: .3em .13em;
+			}
+
+			.nav-a:hover{
+				color: #D61817;
+			}
+/*  ----  imagen principal ----- */
+
+.img-principal{
+	height: 580px;
+	background-image: url('../img/airplane.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*   -----   title   ----  */
+.title{
+	font-size: 2.7em;
+	color: #A51918;
+	margin-top: .4em;
+}
+
+/* ------  About ----  */
+.about{
+	max-width: 99%;
+	padding: 2.1em 1.2em;
+}
+.about-fig{
+	max-width: 43%;
+	float: left;
+	margin: 1em;
+}
+
+
+.about-img{
+	width: 100%;
+	float: left;
+}
+.about-container{
+	max-width: 48%;
+	float: right;
+}
+.about-title{
+	color: #B73137;
+	font-size: 2em;
+}
+
+/* -----  Products  ----- */
+.product{
+	text-align: center;
+}
+	.product-title{
+		text-align: center;
+		font-size: 2.1em;
+		color: #A51918;
+	}
+	.product-container{
+		float: none;
+		display: inline-block;
+		max-width: 27%;
+		padding: 0 .7em;
+		margin: .3em .7em;
+	}
+		.product-img-container{
+			text-align: center;
+			margin: 1em;
+		}
+		.product-text{
+
+		}
+
+/* ----   Contact   ----  */
+.contact{
+
+}
+	.contact-title{
+		text-align: center;
+		font-size: 2.1em;
+		color: #A51918;
+	}
+	.contact-text{
+		max-width: 45%;
+		margin: 1.2em;
+
+	}
+	.container-form{
+		max-width: 45%;
+		float: right;
+		margin: 1.2em; 	
+
+	}
+		.form-contact{
+			padding: .8em 1.5em;
+		}
+			.label{
+				padding-left: .4em;
+				font-size: 1.2em;
+			}
+			.inp, .textarea{
+				padding: .4em .7em;
+				display: block;
+				margin: .4em 0;
+				font-size: 1.05em;
+				width: 100%;
+				border: 1px solid #ccc;
+				border-radius: .2em;
+			}
+			.send{
+				padding: .6em;
+				-webkit-box-shadow: 0 0 .1em;
+				-moz-box-shadow: 0 0 .1em;
+				-o-box-shadow: 0 0 .1em;
+				-ms-box-shadow: 0 0 .1em;
+				box-shadow: 0 0 .1em;
+				background-color: #8C8264;
+				border: none;
+				color: #40362A;
+				float: right;
+			}
+			.send:hover{
+				background-color: #405F73;
+				color: #F2F2F2;
+			}
+			.textarea{
+			}
+			.radius{
+				-webkit-border-radius: .8em;
+				-moz-border-radius: .8em;
+				-o-border-radius: .8em;
+				-ms-border-radius: .8em;
+				border-radius: .8em;
+			}
+/*  ------  Footer  -----  */
+
+footer{
+	background-color: #0D0D0D;
+
+}
+.footer-cont{
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	display: table;
+	float: none;
+	text-align: center;
+}
+	.footer-container{
+		max-width: 29%;
+		float: none;
+		display: inline-block;
+		text-align: initial;
+	}
+		.footer-list{
+
+		}
+			.footer-item{
+				color: #F2F2F2;
+			}
+
+/*  -----  detalles finales  -----  */
+.home,.about, .product, .contact{
+	margin-bottom: 1em;
+} 
+
+/*  ------  @media   -------*/
+@media screen and (max-width: 1024px){
+	.product-container{
+		max-width: 42%;
+	}
+}
+@media screen and (max-width: 640px){
+	.about-fig, .about-container, .product-container, .contact-text, .container-form, .footer-container{
+		max-width: 92%;
+	}
+}
+
